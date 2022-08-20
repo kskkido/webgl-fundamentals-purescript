@@ -1,0 +1,189 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.4.
+--
+-- see: https://github.com/sol/hpack
+
+name:           webgl-fundamentals-fp
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/githubuser/webgl-fundamentals-fp#readme>
+homepage:       https://github.com/githubuser/webgl-fundamentals-fp#readme
+bug-reports:    https://github.com/githubuser/webgl-fundamentals-fp/issues
+author:         Author name here
+maintainer:     example@example.com
+copyright:      2022 Author name here
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/githubuser/webgl-fundamentals-fp
+
+library
+  exposed-modules:
+      Applications.Server.Main
+      Applications.Server.Models.Config.Main
+      Applications.Server.Models.ConfigDto.Main
+      Applications.Server.Models.Env.Main
+      Applications.Server.Templates.Pages.Home.Main
+      Applications.Server.Templates.Pages.Shaders.Animation.Main
+      Applications.Server.Templates.Pages.Shaders.Camera.Main
+      Applications.Server.Templates.Pages.Shaders.CameraLookAt.Main
+      Applications.Server.Templates.Pages.Shaders.Fudge.Main
+      Applications.Server.Templates.Pages.Shaders.LightingDirectional.Main
+      Applications.Server.Templates.Pages.Shaders.Perspective.Main
+      Applications.Server.Templates.Pages.Shaders.Rectangle.Main
+      Applications.Server.Templates.Pages.Shaders.Shape3d.Main
+      Applications.Server.Templates.Pages.Shaders.Texture2d.Main
+      Lib.Parse.Main
+  other-modules:
+      Paths_webgl_fundamentals_fp
+  hs-source-dirs:
+      src
+  default-extensions:
+      BlockArguments
+      DeriveAnyClass
+      DeriveGeneric
+      LambdaCase
+      NoImplicitPrelude
+      OverloadedStrings
+      StrictData
+      ExtendedDefaultRules
+      ScopedTypeVariables
+      QuasiQuotes
+  ghc-options: -F -pgmF=record-dot-preprocessor
+  build-depends:
+      aeson
+    , async
+    , base
+    , butcher
+    , bytestring
+    , hashable
+    , hslogger
+    , http-client
+    , http-conduit
+    , http-types
+    , lucid
+    , mtl
+    , network
+    , postgresql-simple
+    , process
+    , record-hasfield
+    , retry
+    , rio
+    , scotty
+    , serialise
+    , stm
+    , text
+    , time
+    , transformers
+    , typed-process
+    , wai-cors
+    , wai-middleware-static
+    , yaml
+  default-language: Haskell2010
+
+executable webgl-fundamentals-fp-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_webgl_fundamentals_fp
+  hs-source-dirs:
+      app
+  default-extensions:
+      BlockArguments
+      DeriveAnyClass
+      DeriveGeneric
+      LambdaCase
+      NoImplicitPrelude
+      OverloadedStrings
+      StrictData
+      ExtendedDefaultRules
+      ScopedTypeVariables
+      QuasiQuotes
+  ghc-options: -F -pgmF=record-dot-preprocessor -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      aeson
+    , async
+    , base
+    , butcher
+    , bytestring
+    , hashable
+    , hslogger
+    , http-client
+    , http-conduit
+    , http-types
+    , lucid
+    , mtl
+    , network
+    , postgresql-simple
+    , process
+    , record-hasfield
+    , retry
+    , rio
+    , scotty
+    , serialise
+    , stm
+    , text
+    , time
+    , transformers
+    , typed-process
+    , wai-cors
+    , wai-middleware-static
+    , webgl-fundamentals-fp
+    , yaml
+  default-language: Haskell2010
+
+test-suite webgl-fundamentals-fp-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_webgl_fundamentals_fp
+  hs-source-dirs:
+      test
+  default-extensions:
+      BlockArguments
+      DeriveAnyClass
+      DeriveGeneric
+      LambdaCase
+      NoImplicitPrelude
+      OverloadedStrings
+      StrictData
+      ExtendedDefaultRules
+      ScopedTypeVariables
+      QuasiQuotes
+  ghc-options: -F -pgmF=record-dot-preprocessor -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      aeson
+    , async
+    , base
+    , butcher
+    , bytestring
+    , hashable
+    , hslogger
+    , http-client
+    , http-conduit
+    , http-types
+    , lucid
+    , mtl
+    , network
+    , postgresql-simple
+    , process
+    , record-hasfield
+    , retry
+    , rio
+    , scotty
+    , serialise
+    , stm
+    , text
+    , time
+    , transformers
+    , typed-process
+    , wai-cors
+    , wai-middleware-static
+    , webgl-fundamentals-fp
+    , yaml
+  default-language: Haskell2010
