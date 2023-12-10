@@ -31,6 +31,9 @@ render = Lucid.doctypehtml_ do
         Lucid.a_ [Lucid.href_ "/shaders/lighting-directional"] do
           "lighting-directional"
       Lucid.li_ [] do
+        Lucid.a_ [Lucid.href_ "/shaders/lighting-point"] do
+          "lighting-point"
+      Lucid.li_ [] do
         Lucid.a_ [Lucid.href_ "/shaders/rectangle"] do
           "rectangle"
       Lucid.li_ [] do

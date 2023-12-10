@@ -17,6 +17,7 @@ import qualified Applications.Server.Templates.Pages.Shaders.Camera.Main as Page
 import qualified Applications.Server.Templates.Pages.Shaders.CameraLookAt.Main as Pages.Shaders.CameraLookAt
 import qualified Applications.Server.Templates.Pages.Shaders.Fudge.Main as Pages.Shaders.Fudge
 import qualified Applications.Server.Templates.Pages.Shaders.LightingDirectional.Main as Pages.Shaders.LightingDirectional
+import qualified Applications.Server.Templates.Pages.Shaders.LightingPoint.Main as Pages.Shaders.LightingPoint
 import qualified Applications.Server.Templates.Pages.Shaders.Rectangle.Main as Pages.Shaders.Rectangle
 import qualified Applications.Server.Templates.Pages.Shaders.Perspective.Main as Pages.Shaders.Perspective
 import qualified Applications.Server.Templates.Pages.Shaders.Shape3d.Main as Pages.Shaders.Shape3d
@@ -41,6 +42,8 @@ main = do
       Scotty.html $ Lucid.renderText Pages.Shaders.Fudge.render
     Scotty.get "/shaders/lighting-directional" do
       Scotty.html $ Lucid.renderText Pages.Shaders.LightingDirectional.render
+    Scotty.get "/shaders/lighting-point" do
+      Scotty.html $ Lucid.renderText Pages.Shaders.LightingPoint.render
     Scotty.get "/shaders/rectangle" do
       Scotty.html $ Lucid.renderText Pages.Shaders.Rectangle.render
     Scotty.get "/shaders/perspective" do

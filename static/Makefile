@@ -13,6 +13,7 @@ build-scripts:
 	spago bundle-app --main Pages.Shaders.CameraLookAt.Main --to ./public/scripts/pages/shaders/camera-look-at/index.js
 	spago bundle-app --main Pages.Shaders.Fudge.Main --to ./public/scripts/pages/shaders/fudge/index.js
 	spago bundle-app --main Pages.Shaders.LightingDirectional.Main --to ./public/scripts/pages/shaders/lighting-directional/index.js
+	spago bundle-app --main Pages.Shaders.LightingPoint.Main --to ./public/scripts/pages/shaders/lighting-point/index.js
 	spago bundle-app --main Pages.Shaders.Rectangle.Main --to ./public/scripts/pages/shaders/rectangle/index.js
 	spago bundle-app --main Pages.Shaders.Perspective.Main --to ./public/scripts/pages/shaders/perspective/index.js
 	spago bundle-app --main Pages.Shaders.Shape3d.Main --to ./public/scripts/pages/shaders/shape3d/index.js

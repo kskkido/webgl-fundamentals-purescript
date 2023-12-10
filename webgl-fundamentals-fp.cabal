@@ -35,6 +35,7 @@ library
       Applications.Server.Templates.Pages.Shaders.CameraLookAt.Main
       Applications.Server.Templates.Pages.Shaders.Fudge.Main
       Applications.Server.Templates.Pages.Shaders.LightingDirectional.Main
+      Applications.Server.Templates.Pages.Shaders.LightingPoint.Main
       Applications.Server.Templates.Pages.Shaders.Perspective.Main
       Applications.Server.Templates.Pages.Shaders.Rectangle.Main
       Applications.Server.Templates.Pages.Shaders.Shape3d.Main
